@@ -1,0 +1,83 @@
+<!-- search.component.html -->
+<div class="search-container">
+    <form [formGroup]="searchForm" (ngSubmit)="onSearch()" class="search-form">
+      <div class="form-group">
+        <label>Entity Id</label>
+        <input formControlName="entityId" type="text" maxlength="500" placeholder="Enter Entity ID" />
+        <div class="error" *ngIf="searchForm.get('entityId')?.touched && searchForm.get('entityId')?.invalid">
+          Entity Id is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Is Main Entity</label>
+        <input formControlName="isMainEntity" type="checkbox" />
+      </div>
+  
+      <div class="form-group">
+        <label>Nationality</label>
+        <input formControlName="nationality" type="text" maxlength="5" placeholder="Enter Nationality" />
+        <div class="error" *ngIf="searchForm.get('nationality')?.touched && searchForm.get('nationality')?.invalid">
+          Nationality is required.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Date of Birth/Incorporated Date</label>
+        <input formControlName="dateOfBirthIncorporatedDate" type="date" />
+        <div class="error" *ngIf="searchForm.get('dateOfBirthIncorporatedDate')?.touched && searchForm.get('dateOfBirthIncorporatedDate')?.invalid">
+          Date of Birth/Incorporated Date is required.
+        </div>
+      </div>
+  
+      <button type="submit" class="search-button">Search</button>
+    </form>
+  
+    <div *ngIf="noRecordsFound" class="no-records">
+      No Records Found
+    </div>
+  
+    <div *ngIf="filteredRecords.length > 0" class="results-container">
+      <h3>Results</h3>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Entry Id</th>
+            <th>Entity Name</th>
+            <th>Aliases</th>
+            <th>Type of Profile</th>
+            <th>Is Customer</th>
+            <th>Corporate Registry Number</th>
+            <th>Date of Birth/Incorporated Date</th>
+            <th>Nationality</th>
+            <th>Country of Incorporation</th>
+            <th>Last Modified Time</th>
+            <th>Total Count</th>
+            <!-- Additional counts columns here -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of filteredRecords">
+            <td>
+              <a [routerLink]="['/entity-detail', record.EntryId]" target="_blank">
+                {{ record.EntryId }}
+              </a>
+            </td>
+            <td>{{ record.EntryId }}</td>
+            <td>{{ record.EntityName }}</td>
+            <td>{{ record.Aliases.join(', ') }}</td>
+            <td>{{ record.TypeOfProfile }}</td>
+            <td>{{ record.IsCustomer }}</td>
+            <td>{{ record.CorporateRegistryNumber }}</td>
+            <td>{{ record.DateOfBirthIncorporatedDate }}</td>
+            <td>{{ record.Nationality }}</td>
+            <td>{{ record.CountryOfIncorporation }}</td>
+            <td>{{ record.LastModifiedTime }}</td>
+            <td>{{ record.TotalCount }}</td>
+            <!-- Additional counts columns here -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

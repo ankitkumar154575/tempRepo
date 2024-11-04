@@ -1,0 +1,520 @@
+{
+  "users": [
+    {
+      "cosmicData": {
+        "action": "Review",
+        "updateTeasonOthers": "Additional investigation required",
+        "cosmicId": "COSMIC001",
+        "parentCaseId": "CASE1001",
+        "businessUnit": "BU001",
+        "businessUnitLabel": "Global Operations",
+        "focusIdentifier": "FI1001",
+        "focusName": "John Doe Investigations",
+        "createdBy": "Analyst01",
+        "summary": [
+          {
+            "sharingCategory": "Internal",
+            "riskType": [
+              {
+                "label": "High",
+                "value": "H"
+              }
+            ],
+            "hasExistingTicket": true,
+            "existingTicketNumber": "TICK001",
+            "internalReferenceNumber": "REF1001",
+            "existingTicketReason": "Suspicious transaction",
+            "ticketReasonOthers": "",
+            "redFlags": [
+              {
+                "redFlagsCode": "RF001",
+                "redFlagType": "AML",
+                "generic": "Suspicious Activity",
+                "redFlag": "Large transfers"
+              }
+            ],
+            "sendingBank": {
+              "label": "Bank of America",
+              "value": "BOA"
+            },
+            "receivingBank": {
+              "label": "Chase Bank",
+              "value": "CHASE"
+            },
+            "summaryDescription": "Suspicious large transaction detected",
+            "rfi": {
+              "Questions": [
+                {
+                  "questionText": "What is the source of funds?",
+                  "questionCode": "Q1",
+                  "order": 1
+                }
+              ]
+            }
+          }
+        ],
+        "entityInformation": [
+          {
+            "rownum": 1,
+            "category": "Primary",
+            "includedInAlert": true,
+            "alertJustification": "High risk transaction",
+            "countryOfIncorporation": "USA",
+            "countryOfIncorporationLabel": "United States",
+            "corporateRegistryNumber": "CRN1234",
+            "type": "Business",
+            "name": "Alpha Corp",
+            "dateofBirthIncorporatedDate": "1985-06-15",
+            "nationality": ["US"],
+            "addressess": [
+              {
+                "rownum": 1,
+                "addressType": {
+                  "label": "Business",
+                  "value": "BUS"
+                },
+                "addressTypeString": "Business",
+                "isStructured": true,
+                "countryCode": "US",
+                "addressLine1": "123 Main St",
+                "addressLine2": "Suite 100",
+                "addressLine3": "",
+                "addressLine4": "",
+                "addressLine5": ""
+              }
+            ],
+            "telephoneNumbers": [
+              {
+                "rownum": 1,
+                "telephoneType": {
+                  "label": "Office",
+                  "value": "OFF"
+                },
+                "telephoneTypeString": "Office",
+                "countryCode": "+1",
+                "areaCode": "123",
+                "number": "4567890"
+              }
+            ],
+            "DATA_VALIDATED": true,
+            "DATA_ERRORS": []
+          }
+        ],
+        "accounts": [
+          {
+            "entity": "Alpha Corp",
+            "accountNumber": "ACC123456",
+            "accountTypeUI": "Corporate",
+            "accountType": {
+              "label": "Business",
+              "value": "BUS"
+            },
+            "accountOpenDate": "2010-01-01",
+            "accountStatusUI": "Active",
+            "accountStatus": {
+              "label": "Active",
+              "value": "A"
+            }
+          }
+        ],
+        "transaction": [
+          {
+            "transactionReferenceId": "TXN1001",
+            "transactionDate": "2023-10-10",
+            "originatorName": "Alpha Corp",
+            "originatingAccountNo": "ACC123456",
+            "originatingBankCode": {
+              "label": "Bank of America",
+              "value": "BOA"
+            },
+            "amount": "50000",
+            "currencyCode": {
+              "label": "USD",
+              "value": "USD"
+            },
+            "sgdEquivalentAmount": "68000",
+            "beneficiaryName": "Bravo Inc",
+            "beneficiaryAccountInternalId": "BEN1001",
+            "beneficiaryAccountNo": "ACC654321",
+            "beneficiaryBankCode": {
+              "label": "Chase Bank",
+              "value": "CHASE"
+            },
+            "recordType": "Credit"
+          }
+        ],
+        "benefeciaries": [],
+        "sourceAuditData": [],
+        "kycData": ""
+      },
+      "checksum": "abcd1234",
+      "EntityId": "001",
+      "IsMainEntity": true,
+      "Nationality": "US",
+      "DateOfBirthIncorporatedDate": "1985-06-15",
+      "EntryId": "1",
+      "EntityName": "Alpha Corp",
+      "Aliases": ["Alpha Corporation", "A Corp"],
+      "TypeOfProfile": "Business",
+      "IsCustomer": true,
+      "CorporateRegistryNumber": "CRN1001",
+      "CountryOfIncorporation": "USA",
+      "LastModifiedTime": "12:34:56",
+      "TotalCount": 5,
+      "ActiveCountAsMainEntity": 3,
+      "ExitedCountAsMainEntity": 1,
+      "NotExitedCountAsMainEntity": 1,
+      "InactiveCountAsMainEntity": 0,
+      "ExpiredCountAsMainEntity": 0,
+      "ActiveCountAsRelatedParty": 2,
+      "ExitedCountAsRelatedParty": 1,
+      "NotExitedCountAsRelatedParty": 1,
+      "InactiveCountAsRelatedParty": 1,
+      "ExpiredCountAsRelatedParty": 0
+    },
+    {
+      "cosmicData": {
+        "action": "Review",
+        "updateTeasonOthers": "Further action needed",
+        "cosmicId": "COSMIC002",
+        "parentCaseId": "CASE1002",
+        "businessUnit": "BU002",
+        "businessUnitLabel": "International Operations",
+        "focusIdentifier": "FI1002",
+        "focusName": "Beta Corp Investigations",
+        "createdBy": "Analyst02",
+        "summary": [
+          {
+            "sharingCategory": "External",
+            "riskType": [
+              {
+                "label": "Medium",
+                "value": "M"
+              }
+            ],
+            "hasExistingTicket": true,
+            "existingTicketNumber": "TICK002",
+            "internalReferenceNumber": "REF1002",
+            "existingTicketReason": "KYC update",
+            "ticketReasonOthers": "",
+            "redFlags": [
+              {
+                "redFlagsCode": "RF002",
+                "redFlagType": "Fraud",
+                "generic": "Suspicious Address",
+                "redFlag": "Address mismatch"
+              }
+            ],
+            "sendingBank": {
+              "label": "HSBC",
+              "value": "HSBC"
+            },
+            "receivingBank": {
+              "label": "Barclays",
+              "value": "BARC"
+            },
+            "summaryDescription": "Address mismatch on profile",
+            "rfi": {
+              "Questions": [
+                {
+                  "questionText": "Why is there an address mismatch?",
+                  "questionCode": "Q2",
+                  "order": 1
+                }
+              ]
+            }
+          }
+        ],
+        "entityInformation": [
+          {
+            "rownum": 1,
+            "category": "Secondary",
+            "includedInAlert": true,
+            "alertJustification": "Medium risk KYC",
+            "countryOfIncorporation": "UK",
+            "countryOfIncorporationLabel": "United Kingdom",
+            "corporateRegistryNumber": "CRN5678",
+            "type": "Business",
+            "name": "Beta Corp",
+            "dateofBirthIncorporatedDate": "2001-03-21",
+            "nationality": ["UK"],
+            "addressess": [
+              {
+                "rownum": 1,
+                "addressType": {
+                  "label": "Head Office",
+                  "value": "HO"
+                },
+                "addressTypeString": "Head Office",
+                "isStructured": true,
+                "countryCode": "UK",
+                "addressLine1": "456 Elm St",
+                "addressLine2": "Level 3",
+                "addressLine3": "",
+                "addressLine4": "",
+                "addressLine5": ""
+              }
+            ],
+            "telephoneNumbers": [
+              {
+                "rownum": 1,
+                "telephoneType": {
+                  "label": "Office",
+                  "value": "OFF"
+                },
+                "telephoneTypeString": "Office",
+                "countryCode": "+44",
+                "areaCode": "203",
+                "number": "1234567"
+              }
+            ],
+            "DATA_VALIDATED": true,
+            "DATA_ERRORS": []
+          }
+        ],
+        "accounts": [
+          {
+            "entity": "Beta Corp",
+            "accountNumber": "ACC987654",
+            "accountTypeUI": "Corporate",
+            "accountType": {
+              "label": "Business",
+              "value": "BUS"
+            },
+            "accountOpenDate": "2015-04-01",
+            "accountStatusUI": "Active",
+            "accountStatus": {
+              "label": "Active",
+              "value": "A"
+            }
+          }
+        ],
+        "transaction": [
+          {
+            "transactionReferenceId": "TXN1002",
+            "transactionDate": "2023-09-12",
+            "originatorName": "Beta Corp",
+            "originatingAccountNo": "ACC987654",
+            "originatingBankCode": {
+              "label": "HSBC",
+              "value": "HSBC"
+            },
+            "amount": "120000",
+            "currencyCode": {
+              "label": "GBP",
+              "value": "GBP"
+            },
+            "sgdEquivalentAmount": "180000",
+            "beneficiaryName": "Gamma Ltd",
+            "beneficiaryAccountInternalId": "BEN2002",
+            "beneficiaryAccountNo": "ACC432109",
+            "beneficiaryBankCode": {
+              "label": "Barclays",
+              "value": "BARC"
+            },
+            "recordType": "Debit"
+          }
+        ],
+        "benefeciaries": [],
+        "sourceAuditData": [],
+        "kycData": ""
+      },
+      "checksum": "efgh5678",
+      "EntityId": "002",
+      "IsMainEntity": false,
+      "Nationality": "UK",
+      "DateOfBirthIncorporatedDate": "2001-03-21",
+      "EntryId": "2",
+      "EntityName": "Beta Corp",
+      "Aliases": ["Beta Corporation", "B Corp"],
+      "TypeOfProfile": "Business",
+      "IsCustomer": true,
+      "CorporateRegistryNumber": "CRN5678",
+      "CountryOfIncorporation": "UK",
+      "LastModifiedTime": "13:45:12",
+      "TotalCount": 4,
+      "ActiveCountAsMainEntity": 2,
+      "ExitedCountAsMainEntity": 1,
+      "NotExitedCountAsMainEntity": 1,
+      "InactiveCountAsMainEntity": 0,
+      "ExpiredCountAsMainEntity": 0,
+      "ActiveCountAsRelatedParty": 1,
+      "ExitedCountAsRelatedParty": 1,
+      "NotExitedCountAsRelatedParty": 0,
+      "InactiveCountAsRelatedParty": 1,
+      "ExpiredCountAsRelatedParty": 0
+    },
+    {
+      "cosmicData": {
+        "action": "Monitor",
+        "updateTeasonOthers": "Pending review",
+        "cosmicId": "COSMIC003",
+        "parentCaseId": "CASE1003",
+        "businessUnit": "BU003",
+        "businessUnitLabel": "Corporate Monitoring",
+        "focusIdentifier": "FI1003",
+        "focusName": "Gamma Ltd Investigations",
+        "createdBy": "Analyst03",
+        "summary": [
+          {
+            "sharingCategory": "Confidential",
+            "riskType": [
+              {
+                "label": "Low",
+                "value": "L"
+              }
+            ],
+            "hasExistingTicket": false,
+            "existingTicketNumber": "",
+            "internalReferenceNumber": "REF1003",
+            "existingTicketReason": "",
+            "ticketReasonOthers": "No previous history",
+            "redFlags": [
+              {
+                "redFlagsCode": "RF003",
+                "redFlagType": "Compliance",
+                "generic": "Risk Alert",
+                "redFlag": "Low-level risk alert"
+              }
+            ],
+            "sendingBank": {
+              "label": "Citi Bank",
+              "value": "CITI"
+            },
+            "receivingBank": {
+              "label": "Deutsche Bank",
+              "value": "DB"
+            },
+            "summaryDescription": "Routine compliance review",
+            "rfi": {
+              "Questions": [
+                {
+                  "questionText": "What is the primary business?",
+                  "questionCode": "Q3",
+                  "order": 1
+                }
+              ]
+            }
+          }
+        ],
+        "entityInformation": [
+          {
+            "rownum": 1,
+            "category": "Tertiary",
+            "includedInAlert": false,
+            "alertJustification": "Routine check",
+            "countryOfIncorporation": "Germany",
+            "countryOfIncorporationLabel": "Germany",
+            "corporateRegistryNumber": "CRN9101",
+            "type": "Business",
+            "name": "Gamma Ltd",
+            "dateofBirthIncorporatedDate": "2012-07-25",
+            "nationality": ["DE"],
+            "addressess": [
+              {
+                "rownum": 1,
+                "addressType": {
+                  "label": "Head Office",
+                  "value": "HO"
+                },
+                "addressTypeString": "Head Office",
+                "isStructured": true,
+                "countryCode": "DE",
+                "addressLine1": "789 Oak St",
+                "addressLine2": "Floor 2",
+                "addressLine3": "",
+                "addressLine4": "",
+                "addressLine5": ""
+              }
+            ],
+            "telephoneNumbers": [
+              {
+                "rownum": 1,
+                "telephoneType": {
+                  "label": "Office",
+                  "value": "OFF"
+                },
+                "telephoneTypeString": "Office",
+                "countryCode": "+49",
+                "areaCode": "30",
+                "number": "9876543"
+              }
+            ],
+            "DATA_VALIDATED": true,
+            "DATA_ERRORS": []
+          }
+        ],
+        "accounts": [
+          {
+            "entity": "Gamma Ltd",
+            "accountNumber": "ACC101112",
+            "accountTypeUI": "Corporate",
+            "accountType": {
+              "label": "Business",
+              "value": "BUS"
+            },
+            "accountOpenDate": "2018-05-10",
+            "accountStatusUI": "Active",
+            "accountStatus": {
+              "label": "Active",
+              "value": "A"
+            }
+          }
+        ],
+        "transaction": [
+          {
+            "transactionReferenceId": "TXN1003",
+            "transactionDate": "2023-08-20",
+            "originatorName": "Gamma Ltd",
+            "originatingAccountNo": "ACC101112",
+            "originatingBankCode": {
+              "label": "Citi Bank",
+              "value": "CITI"
+            },
+            "amount": "25000",
+            "currencyCode": {
+              "label": "EUR",
+              "value": "EUR"
+            },
+            "sgdEquivalentAmount": "36000",
+            "beneficiaryName": "Delta Partners",
+            "beneficiaryAccountInternalId": "BEN3003",
+            "beneficiaryAccountNo": "ACC121314",
+            "beneficiaryBankCode": {
+              "label": "Deutsche Bank",
+              "value": "DB"
+            },
+            "recordType": "Credit"
+          }
+        ],
+        "benefeciaries": [],
+        "sourceAuditData": [],
+        "kycData": ""
+      },
+      "checksum": "ijkl9012",
+      "EntityId": "003",
+      "IsMainEntity": true,
+      "Nationality": "DE",
+      "DateOfBirthIncorporatedDate": "2012-07-25",
+      "EntryId": "3",
+      "EntityName": "Gamma Ltd",
+      "Aliases": ["Gamma Limited", "G Ltd"],
+      "TypeOfProfile": "Business",
+      "IsCustomer": true,
+      "CorporateRegistryNumber": "CRN9101",
+      "CountryOfIncorporation": "DE",
+      "LastModifiedTime": "11:22:33",
+      "TotalCount": 3,
+      "ActiveCountAsMainEntity": 3,
+      "ExitedCountAsMainEntity": 0,
+      "NotExitedCountAsMainEntity": 0,
+      "InactiveCountAsMainEntity": 0,
+      "ExpiredCountAsMainEntity": 0,
+      "ActiveCountAsRelatedParty": 0,
+      "ExitedCountAsRelatedParty": 0,
+      "NotExitedCountAsRelatedParty": 0,
+      "InactiveCountAsRelatedParty": 0,
+      "ExpiredCountAsRelatedParty": 0
+    }
+  ]
+}

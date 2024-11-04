@@ -1,0 +1,66 @@
+<!-- entity-detail.component.html -->
+<div *ngIf="entityData">
+  <h2>Details for Entry Id: {{ entryId }}</h2>
+
+  <!-- Summary Section -->
+  <h3>Summary</h3>
+  <table class="detail-table">
+    <tr>
+      <th>Action</th>
+      <td>{{ entityData.cosmicData.action }}</td>
+    </tr>
+    <tr>
+      <th>Update Reason</th>
+      <td>{{ entityData.cosmicData.updateTeasonOthers }}</td>
+    </tr>
+    <tr>
+      <th>Summary Description</th>
+      <td>{{ entityData.cosmicData.summary[0].summaryDescription }}</td>
+    </tr>
+  </table>
+
+  <!-- Entity Information Section -->
+  <h3>Entity Information</h3>
+  <table class="detail-table">
+    <tr>
+      <th>Nationality</th>
+      <td>{{ entityData.cosmicData.entityInformation[0].nationality[0] }}</td>
+    </tr>
+    <tr>
+      <th>Telephone Number</th>
+      <td>{{ entityData.cosmicData.entityInformation[0].telephoneNumbers[0].countryCode }} {{ entityData.cosmicData.entityInformation[0].telephoneNumbers[0].number }}</td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>{{ entityData.cosmicData.entityInformation[0].addressess[0].addressLine1 }}, {{ entityData.cosmicData.entityInformation[0].addressess[0].addressLine2 }}</td>
+    </tr>
+  </table>
+
+  <!-- Accounts Section -->
+  <h3>Accounts</h3>
+  <table class="detail-table">
+    <tr>
+      <th>Account Number</th>
+      <td>{{ entityData.cosmicData.accounts[0].accountNumber }}</td>
+    </tr>
+    <tr>
+      <th>Account Type</th>
+      <td>{{ entityData.cosmicData.accounts[0].accountType.label }}</td>
+    </tr>
+    <tr>
+      <th>Account Status</th>
+      <td>{{ entityData.cosmicData.accounts[0].accountStatus.label }}</td>
+    </tr>
+  </table>
+
+  <!-- Beneficiaries Section -->
+  <h3>Beneficiaries</h3>
+  <div *ngIf="entityData.cosmicData.benefeciaries.length > 0; else noBeneficiaries">
+    <table class="detail-table">
+      <!-- Populate beneficiaries as needed -->
+    </table>
+  </div>
+  <ng-template #noBeneficiaries>
+    <p>No Beneficiaries available.</p>
+  </ng-template>
+</div>
